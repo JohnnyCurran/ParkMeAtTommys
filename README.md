@@ -8,6 +8,8 @@ What should have been a painless 5-second process had been taken over by enterpr
 
 [Parking Form Image](https://i.imgur.com/SDnvbdb.png)
 
+<img align="left" width="375" height="812" src="https://i.imgur.com/SDnvbdb.png">
+
 Pictured: Step 1 of 3 of the parking form.
 
 # How It Works
