@@ -6,11 +6,9 @@ Upon opening the link at [pass2parkit](https://pass2park.it/verifyvisit) I was g
 
 What should have been a painless 5-second process had been taken over by enterprise software and would have to be repeated every time I wanted to visit my friend. I turned my attention to automating the process:
 
-[Parking Form Image](https://i.imgur.com/SDnvbdb.png)
+Pictured: Step 1 of 3 of the parking form.
 
 <img align="left" width="375" height="812" src="https://i.imgur.com/SDnvbdb.png">
-
-Pictured: Step 1 of 3 of the parking form.
 
 # How It Works
 
@@ -22,11 +20,14 @@ All of this culminates in an iOS shortcut which makes the GET request for me. No
 
 An added benefit of this system is that since the permits are delivered to my phone via text, I have a (semi) permanenet record of my valid parking pass. In the event I am towed, I have the permit number and time that my parking was valid. This would be made much more difficult if, without a screenshot or other record, I navigated away from the successful parking confirmation message on my phone.
 
+<br>
+<br>
+
 # Example
 
-[iMessage of pass](https://i.imgur.com/mrrICGd.jpg)
+<img width="375" height="812" src="https://i.imgur.com/mrrICGd.jpg">
 
-[Received Pass Image](https://i.imgur.com/dyfx0W0.jpg)
+<img width="375" height="812" src="https://i.imgur.com/dyfx0W0.jpg">
 
 # Deployment & Hosting
 
