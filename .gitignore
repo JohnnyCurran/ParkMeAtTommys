@@ -1,0 +1,11 @@
+bin/
+obj/
+credentials.json
+ss.png
+token.json/
+.DS_Store
+.vs/
+*.png
+ParkingInfo.json
+buildAndRestart.sh
+EmailInfo.json
