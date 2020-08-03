@@ -57,4 +57,4 @@ WantedBy=multi-user.target
 
 The iOS shortcut is an extremely simple GET request:
 
-<img width="375" height="812" src="https://imgur.com/fd0tYe4">
+<img width="375" height="812" src="https://imgur.com/fd0tYe4.png">
