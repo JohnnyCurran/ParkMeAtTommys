@@ -30,7 +30,7 @@ After a screenshot is obtained, the Gmail API is invoked in order to send an ema
 
 All of this culminates in an iOS shortcut which makes the GET request for me. Now, when I arrive at my friends apartment, I simply say "Hey Siri, Park Me At Tommy's"  and I receive my parking pass.
 
-An added benefit of this system is that since the permits are delivered to my phone via text, I have a (semi) permanenet record of my valid parking pass. In the event I am towed, I have the permit number and time that my parking was valid. This would be made much more difficult if, without a screenshot or other record, I navigated away from the successful parking confirmation message on my phone.
+An added benefit of this system is that since the permits are delivered to my phone via text, I have a (semi) permanent record of my valid parking pass. In the event I am towed, I have the permit number and time that my parking was valid. This would be made much more difficult if, without a screenshot or other record, I navigated away from the successful parking confirmation message on my phone.
 
 <br>
 <br>
