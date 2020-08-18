@@ -227,8 +227,9 @@ $.ajax({
 
 It creates a `POST` request passing both tokens, session id, and all of our vehicle information. The same functionality can be recreated with this cURL command:
 
-```bashcurl -c cookiejar -b cookiejar "https://pass2park.it/guestapp/savehicledata" --data-raw "_token=$TOKEN&session_id=$SESSIONID&authentication_token=$AUTHTOKEN&veh_lic_plate_no=$LICPLATE&veh_state=$LICSTATE&veh_make=$MAKE&veh_model=$MODEL&veh_year=$YEAR&veh_color=$COLOR"
 ```bash
+curl -c cookiejar -b cookiejar "https://pass2park.it/guestapp/savehicledata" --data-raw "_token=$TOKEN&session_id=$SESSIONID&authentication_token=$AUTHTOKEN&veh_lic_plate_no=$LICPLATE&veh_state=$LICSTATE&veh_make=$MAKE&veh_model=$MODEL&veh_year=$YEAR&veh_color=$COLOR"
+```
 
 ## Step 3: Parking Rules & Parking Pass
 
