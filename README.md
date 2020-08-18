@@ -239,7 +239,7 @@ Once our vehicle is registered and we are presented with the `parking rules` pag
 
 The JS on this page contains a bunch of what seems to be a developer's test code commented out:
 
-<img width="375" height="812" src="https://imgur.com/Ug5en4H.png"/>
+<img src="https://imgur.com/Ug5en4H.png"/>
 
 The `Cancel` button warns you that registration info will be removed and even plays a nice little animation to let you believe it's doing something. Looking at the code, however, reveals it simply waits 1 second before displaying a "Registration cancelled" alert. This suggests the registration is not registered at all until you hit `I Agree & Accept`.
 
