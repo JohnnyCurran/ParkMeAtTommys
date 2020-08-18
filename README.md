@@ -155,7 +155,7 @@ With the `-c` flag, cURL saves the cookies into a file named `cookiejar`. We loo
 Now we can replicate the AJAX call with our vehicle's details with our `_token` using cURL:
 ```bash
 curl -c cookiejar -b cookiejar https://pass2park.it/guestapp/verify --data-raw "_token=$TOKEN&rentroll_phone_no=$PHONENUM&rentroll_no=$APTNUM" > sessionData
-```bash
+```
 
 The `-b` flag sends all the cookies stored in `cookiejar` along with our request. We pass our token, phone number, and apartment number in the `--data-raw` flag which automatically tells cURL to make a POST request.
 
