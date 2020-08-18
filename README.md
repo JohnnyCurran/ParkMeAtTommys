@@ -2,7 +2,7 @@
 - [How It Works](#how-it-works)
 - [Example](#example)
 - [Deployment & Hosting](#deployment---hosting)
-- [Reverse Engineering Pass2ParkIt's Web App](#reverse-engineering-pass2parkit-s-web-app)
+- [Reverse Engineering Pass2ParkIt's Web App](#reverse-engineering-pass2parkits-web-app)
   * [Other Solutions](#other-solutions)
   * [Initial Analysis](#initial-analysis)
   * [Step 1: Verify Visit](#step-1--verify-visit)
