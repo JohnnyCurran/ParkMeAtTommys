@@ -197,7 +197,7 @@ AUTHTOKEN=$(cat sessionData | jq --raw-output '.session_data.authentication_toke
 
 The next step is filling in our car's information on this form:
 
-<img src="https://imgur.com/F2nTrGQ.png" />
+<img height="812" width="375" src="https://imgur.com/F2nTrGQ.png" />
 
 It takes the Plate, State, Make, Model, Year, and Color of our vehicle.
 
@@ -235,11 +235,11 @@ curl -c cookiejar -b cookiejar "https://pass2park.it/guestapp/savehicledata" --d
 
 Once our vehicle is registered and we are presented with the `parking rules` page. We are shown what not to do before pressing `I Agree & Accept`
 
-<img src="https://imgur.com/DRCKlo3.png"/>
+<img width="375" height="812" src="https://imgur.com/DRCKlo3.png"/>
 
 The JS on this page contains a bunch of what seems to be a developer's test code commented out:
 
-<img src="https://imgur.com/Ug5en4H.png"/>
+<img width="375" height="812" src="https://imgur.com/Ug5en4H.png"/>
 
 The `Cancel` button warns you that registration info will be removed and even plays a nice little animation to let you believe it's doing something. Looking at the code, however, reveals it simply waits 1 second before displaying a "Registration cancelled" alert. This suggests the registration is not registered at all until you hit `I Agree & Accept`.
 
