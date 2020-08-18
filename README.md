@@ -361,3 +361,5 @@ curl -c cookiejar -b cookiejar "https://pass2park.it/guestapp/parkingpass" --dat
 ```
 
 And with that, we have replaced our C# selenium webdriver solution with 24 lines of Bash.
+
+Check out the script at [./parkMe.sh](parkMe.sh)
