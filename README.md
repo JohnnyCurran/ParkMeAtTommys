@@ -147,11 +147,15 @@ All the information from the JSON response is saved into session storage. We won
 
 In order to extract the token, XSRF token, and laravel\_session from our GET request, we'll use the following cURL command:
 
-`curl -c cookiejar https://pass2park.it/verifyvisit | grep 'data :' | sed 's/data : //' | sed 's/},/}/' | sed "s/phno/$PHONENUM/" | sed "s/aptno/$APTNUM/" | jq --raw-output '._token'`
+```bash
+curl -c cookiejar https://pass2park.it/verifyvisit | grep 'data :' | sed 's/data : //' | sed 's/},/}/' | sed "s/phno/$PHONENUM/" | sed "s/aptno/$APTNUM/" | jq --raw-output '._token'
+```
 With the `-c` flag, cURL saves the cookies into a file named `cookiejar`. We look for the data response, clean up the jquery output so `jq` does not complain, and extract the `_token` field.
 
 Now we can replicate the AJAX call with our vehicle's details with our `_token` using cURL:
-`curl -c cookiejar -b cookiejar https://pass2park.it/guestapp/verify --data-raw "_token=$TOKEN&rentroll_phone_no=$PHONENUM&rentroll_no=$APTNUM" > sessionData`
+```bash
+curl -c cookiejar -b cookiejar https://pass2park.it/guestapp/verify --data-raw "_token=$TOKEN&rentroll_phone_no=$PHONENUM&rentroll_no=$APTNUM" > sessionData
+```bash
 
 The `-b` flag sends all the cookies stored in `cookiejar` along with our request. We pass our token, phone number, and apartment number in the `--data-raw` flag which automatically tells cURL to make a POST request.
 
@@ -223,7 +227,8 @@ $.ajax({
 
 It creates a `POST` request passing both tokens, session id, and all of our vehicle information. The same functionality can be recreated with this cURL command:
 
-`curl -c cookiejar -b cookiejar "https://pass2park.it/guestapp/savehicledata" --data-raw "_token=$TOKEN&session_id=$SESSIONID&authentication_token=$AUTHTOKEN&veh_lic_plate_no=$LICPLATE&veh_state=$LICSTATE&veh_make=$MAKE&veh_model=$MODEL&veh_year=$YEAR&veh_color=$COLOR"`
+```bashcurl -c cookiejar -b cookiejar "https://pass2park.it/guestapp/savehicledata" --data-raw "_token=$TOKEN&session_id=$SESSIONID&authentication_token=$AUTHTOKEN&veh_lic_plate_no=$LICPLATE&veh_state=$LICSTATE&veh_make=$MAKE&veh_model=$MODEL&veh_year=$YEAR&veh_color=$COLOR"
+```bash
 
 ## Step 3: Parking Rules & Parking Pass
 
@@ -362,4 +367,4 @@ curl -c cookiejar -b cookiejar "https://pass2park.it/guestapp/parkingpass" --dat
 
 And with that, we have replaced our C# selenium webdriver solution with 24 lines of Bash.
 
-Check out the script at [./parkMe.sh](parkMe.sh)
+Check out the script at [parkMe.sh](parkMe.sh)
