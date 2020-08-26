@@ -5,9 +5,9 @@
 - [Reverse Engineering Pass2ParkIt's Web App](#reverse-engineering-pass2parkits-web-app)
   * [Other Solutions](#other-solutions)
   * [Initial Analysis](#initial-analysis)
-  * [Step 1: Verify Visit](#step-1--verify-visit)
-  * [Step 2: Vehicle Details](#step-2--vehicle-details)
-  * [Step 3: Parking Rules & Parking Pass](#step-3--parking-rules---parking-pass)
+  * [Step 1: Verify Visit](#step-1-verify-visit)
+  * [Step 2: Vehicle Details](#step-2-vehicle-details)
+  * [Step 3: Parking Rules & Parking Pass](#step-3-parking-rules--parking-pass)
   * [Step 4: Pure Bash Implementation](#step-4-pure-bash-implementation)
 
 # Inspiration
