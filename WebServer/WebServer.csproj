@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="Google.Apis.Gmail.v1" Version="1.47.0.2005" />
-    <PackageReference Include="System.Text.Json" Version="4.7.2" />
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
   </ItemGroup>
 
   <PropertyGroup>
